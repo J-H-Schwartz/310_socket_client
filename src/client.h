@@ -13,7 +13,7 @@
 
 int create_client_socket();
 
-int establish_client_connection(struct sockaddr_in server, int socket_desc);
+int establish_client_connection();
 
 int send_client_message(int socket_desc, char* message);
 

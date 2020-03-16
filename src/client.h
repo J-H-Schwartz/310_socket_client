@@ -11,9 +11,9 @@
 #define SRV_IP "127.0.0.1"
 #define SRV_PORT 5001
 
-int create_client_socket();
+int create_client_socket(void);
 
-int establish_client_connection();
+int establish_client_connection(void);
 
 int send_client_message(int socket_desc, char* message);
 

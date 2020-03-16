@@ -13,7 +13,7 @@
 #include<errno.h>
 #include"client.h"
 
-int create_client_socket() {
+int create_client_socket(void) {
 	int socket_desc;
 	int myerror;
 	socket_desc = socket(AF_INET, SOCK_STREAM, 0);
@@ -27,7 +27,7 @@ int create_client_socket() {
 	return socket_desc;
 }
 
-int establish_client_connection() {
+int establish_client_connection(void) {
 	while (1) {
 		int socket_desc = create_client_socket();
 		if (socket_desc == -1) {

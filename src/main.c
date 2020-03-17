@@ -54,7 +54,6 @@ int main(int argc, char *argv[]) {
 					printf("Reset socket.\n");
 					socket_desc = -1;
 				}
-				continue;
 			}
 			sleep(2);
 		}
